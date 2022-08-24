@@ -40,6 +40,14 @@ module.exports = (env, argv) => {
             'css-loader',
           ],
         },
+        {
+          test: /\.(svg|png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ],
     },
     plugins: [
