@@ -11,7 +11,7 @@ export const SvgLogo = props => (
 )
 
 export const SvgWorking = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 505 500">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 735 515">
         <defs>
             <linearGradient id="a" x1="0%" x2="100%" y1="50%" y2="50%">
                 <stop offset="0%" stopColor="#183866" />

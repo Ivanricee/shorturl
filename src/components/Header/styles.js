@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
+  background-color: white;
+  padding: 3rem 1.5rem 6rem 1.5rem;
+  margin-inline-start: -1.5rem;
+  margin-inline-end: -1.5rem;
   .header__logomenu {
     display: flex;
     justify-content: space-between;
@@ -65,9 +69,13 @@ export const StyledHeader = styled.header`
   }
   .header__img {
     margin-inline-end: -1.5rem;
+    overflow: hidden;
+    svg {
+      width: 138%;
+    }
   }
   .header__content {
-    margin: 2.5rem 0.5rem;
+    margin: 2.5rem 0rem;
     text-align: center;
     margin-block-end: 5rem;
     h1 {
@@ -81,6 +89,57 @@ export const StyledHeader = styled.header`
       font-size: 1.1rem;
       margin-block-end: 2rem;
       font-weight: 500;
+    }
+  }
+
+  @media ${p => p.theme.breakPointsDevice.desktop} {
+    padding-inline-start: 5rem;
+    padding-inline-end: 1rem;
+    margin-inline-start: -5rem;
+    margin-inline-end: -5rem;
+    display: flex;
+    flex-wrap: wrap;
+    .header__logomenu {
+      order: 1;
+      inline-size: 100%;
+      svg {
+        width: 175px;
+      }
+    }
+    .header__img {
+      order: 3;
+      inline-size: 50%;
+      margin-inline-start: 2.5rem;
+      svg {
+        width: 370px;
+      }
+    }
+    .header__content {
+      order: 2;
+      inline-size: 46%;
+      text-align: left;
+      p {
+        font-size: 0.8rem;
+        margin-block-end: 1rem;
+      }
+    }
+  }
+  @media ${p => p.theme.breakPointsDevice.desktopL} {
+    padding-inline-start: 10rem;
+    padding-inline-end: 5rem;
+    margin-inline-start: -10rem;
+    margin-inline-end: -10rem;
+    .header__content {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media ${p => p.theme.breakPointsDevice.desktopL} {
+    .header__content {
+      p {
+        font-size: 1rem;
+      }
     }
   }
 `
