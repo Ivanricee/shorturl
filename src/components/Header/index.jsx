@@ -11,7 +11,7 @@ export const Header = () => {
     return (
         <StyledHeader aria-label="Header" aria-level="1">
             <section className="header__logomenu">
-                <div>
+                <div className="header__logo">
                     <SvgLogo />
                 </div>
                 <nav>

@@ -11,8 +11,8 @@ export const darkTheme = {
   purpleHr: '#4d4179',
   red: '#ff7a7a',
   breakPointsDevice: {
-    desktop: 'screen and (min-device-width: 768px)',
-    desktopL: 'screen and (min-device-width: 1024px)',
+    desktop: 'screen and (min-width: 768px)',
+    desktopL: 'screen and (min-width: 1024px)',
     large: 'screen and (min-width : 1280px) ',
   },
 }

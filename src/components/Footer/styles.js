@@ -221,8 +221,8 @@ export const StyledFooter = styled.footer`
     .footer__presentation {
       p {
         font-size: 1rem;
-        padding-inline-start: 15.5rem;
-        padding-inline-end: 15.5rem;
+        padding-inline-start: 7.5rem;
+        padding-inline-end: 7.5rem;
       }
     }
     .footer__boost {
@@ -252,7 +252,7 @@ export const StyledFooter = styled.footer`
   @media ${p => p.theme.breakPointsDevice.large} {
     .footer__presentation {
       p {
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
     }
     .footer__cards {

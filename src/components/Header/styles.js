@@ -21,7 +21,6 @@ export const StyledHeader = styled.header`
       }
     }
     nav {
-      display: none;
       position: absolute;
       inset-block-start: 4rem;
       inset-inline-end: 0.5rem;
@@ -105,6 +104,11 @@ export const StyledHeader = styled.header`
       svg {
         width: 175px;
       }
+      nav {
+        inset-block-start: 3rem;
+        inset-inline-end: 4rem;
+        inset-inline-start: 0rem;
+      }
     }
     .header__img {
       order: 3;
@@ -119,7 +123,7 @@ export const StyledHeader = styled.header`
       inline-size: 46%;
       text-align: left;
       p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-block-end: 1rem;
       }
     }
@@ -129,16 +133,73 @@ export const StyledHeader = styled.header`
     padding-inline-end: 5rem;
     margin-inline-start: -10rem;
     margin-inline-end: -10rem;
-    .header__content {
-      p {
-        font-size: 1.2rem;
+    .header__menu {
+      display: none;
+    }
+    .header__logomenu {
+      .header__logo {
+        inline-size: 8rem;
+      }
+      nav {
+        flex: 1;
+        position: initial;
+        background: transparent;
+        padding: 0;
+        margin-block-end: 3rem;
+        ul {
+          display: flex;
+          align-items: center;
+          font-size: 0.8rem;
+          gap: 1rem;
+
+          hr {
+            display: none;
+          }
+
+          li {
+            margin: 0;
+            color: ${p => p.theme.gray1};
+            button {
+              block-size: 2rem;
+              font-size: 0.8rem;
+            }
+            :last-child {
+              inline-size: 5.5rem;
+            }
+            :nth-child(3) {
+              margin-inline-end: 45%;
+            }
+            a {
+              color: ${p => p.theme.gray1};
+            }
+          }
+        }
+      }
+      svg {
+        transform: translateY(60%);
+        width: 195px;
       }
     }
-  }
-  @media ${p => p.theme.breakPointsDevice.desktopL} {
     .header__content {
       p {
         font-size: 1rem;
+      }
+    }
+  }
+  @media ${p => p.theme.breakPointsDevice.large} {
+    .header__menu {
+      display: none;
+    }
+    .header__logomenu {
+      nav {
+        ul {
+          font-size: 0.9rem;
+          li {
+            button {
+              font-size: 0.9rem;
+            }
+          }
+        }
       }
     }
   }
