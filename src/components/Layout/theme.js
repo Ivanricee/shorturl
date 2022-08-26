@@ -13,6 +13,6 @@ export const darkTheme = {
   breakPointsDevice: {
     desktop: 'screen and (min-width: 768px)',
     desktopL: 'screen and (min-width: 1024px)',
-    large: 'screen and (min-width : 1280px) ',
+    large: 'screen and (min-width : 1441px) ',
   },
 }

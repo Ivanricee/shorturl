@@ -37,6 +37,8 @@ export const StyledMain = styled.main`
       }
     }
     small {
+      visibility: ${p => (p.errorVisibility ? 'visible' : 'hidden')};
+      block-size: auto;
       display: block;
       font-size: 0.75rem;
       color: ${p => p.theme.red};

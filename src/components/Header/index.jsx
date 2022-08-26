@@ -1,15 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
-// import { useSelector } from 'react-redux'
+import React, { useEffect, useState } from 'react'
 import { BiMenu } from 'react-icons/bi'
 import { StyledHeader } from './styles'
 import { SvgLogo, SvgWorking } from '../Svg'
 import { ButtonTemplate } from '../ButtonTemplate'
 
 export const Header = () => {
-    // const stateApp = useSelector(state => state.app)
+    const [open, setOpen] = useState(false)
+    const handleDialog = () => {
+        setOpen(prevState => !prevState)
+    }
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 1024px)')
+        function handleDialogMQ() {
+            if (mediaQuery.matches) {
+                if (open) setOpen(false)
+            }
+        }
+        mediaQuery.addListener(handleDialogMQ)
+
+        return () => {
+            mediaQuery.removeEventListener('change', handleDialogMQ)
+        }
+    }, [open])
+
     return (
-        <StyledHeader aria-label="Header" aria-level="1">
+        <StyledHeader aria-label="Header" aria-level="1" isOpenDialog={open}>
             <section className="header__logomenu">
                 <div className="header__logo">
                     <SvgLogo />
@@ -35,7 +51,7 @@ export const Header = () => {
                     </ul>
                 </nav>
                 <div className="header__menu">
-                    <button type="button">
+                    <button type="button" onClick={handleDialog}>
                         <BiMenu />
                     </button>
                 </div>

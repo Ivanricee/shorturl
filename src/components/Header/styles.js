@@ -21,6 +21,7 @@ export const StyledHeader = styled.header`
       }
     }
     nav {
+      display: ${p => (p.isOpenDialog ? 'block' : 'none')};
       position: absolute;
       inset-block-start: 4rem;
       inset-inline-end: 0.5rem;
@@ -141,11 +142,13 @@ export const StyledHeader = styled.header`
         inline-size: 8rem;
       }
       nav {
+        display: block;
         flex: 1;
         position: initial;
         background: transparent;
         padding: 0;
         margin-block-end: 3rem;
+        z-index: 1;
         ul {
           display: flex;
           align-items: center;
