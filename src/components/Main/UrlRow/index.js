@@ -33,13 +33,3 @@ export const UrlRow = ({ original, shorten, id, getUrlId, copied }) => {
     </StyledCopyButton>
   )
 }
-/*
-
-Si el id
-0  2
-1  2
-2 === 2
-3  2
-4  2
-
-*/
