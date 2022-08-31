@@ -40,7 +40,7 @@ export const StyledFooter = styled.footer`
         background-color: ${p => p.theme.button};
       }
 
-      header {
+      .footer__cards-header {
         display: inline-flex;
         position: absolute;
         justify-content: center;
@@ -96,7 +96,7 @@ export const StyledFooter = styled.footer`
       font-size: 0.9rem;
       line-height: 1.2rem;
     }
-    footer {
+    .footer__social {
       display: inline-flex;
       gap: 1.5rem;
       margin-block-start: 3rem;
@@ -122,14 +122,14 @@ export const StyledFooter = styled.footer`
       align-items: start;
       gap: 1rem;
 
-      section {
+      & > section {
         flex: 1;
         text-align: left;
         padding: 1rem;
         padding-block-start: 2rem;
         min-block-size: 8rem;
         max-block-size: 10rem;
-        header {
+        .footer__cards-header {
           inline-size: 1.5rem;
           block-size: 1.5rem;
           inset-block-start: 0rem;
@@ -182,22 +182,22 @@ export const StyledFooter = styled.footer`
         font-size: 0.7rem;
         line-height: 1rem;
       }
-      header {
+      .footer__links-header {
         inline-size: 10rem;
         h2 {
           text-align: left;
           font-size: 1.5rem;
         }
       }
-      main {
+      .footer__link_main {
         flex: 1;
         display: flex;
         justify-content: space-evenly;
         section {
           min-inline-size: 6rem;
           max-inline-size: 22rem;
-          header {
-            h4 {
+          div {
+            h3 {
               font-size: 0.8rem;
               margin-block-start: 0rem;
             }
@@ -205,7 +205,7 @@ export const StyledFooter = styled.footer`
           }
         }
       }
-      footer {
+      .footer__social {
         align-self: start;
         justify-content: center;
         text-align: center;
@@ -239,8 +239,8 @@ export const StyledFooter = styled.footer`
       justify-content: center;
       align-items: start;
       gap: 1rem;
-      section {
-        main {
+      & > section {
+        .footer__card-main {
           p {
             font-size: 0.85rem;
             line-height: 1.1rem;
@@ -256,8 +256,8 @@ export const StyledFooter = styled.footer`
       }
     }
     .footer__cards {
-      section {
-        main {
+      & > section {
+        .footer__card-main {
           p {
             font-size: 0.8rem;
             line-height: 1.1rem;

@@ -68,7 +68,6 @@ export const Main = () => {
     return (
         <StyledMain
             aria-label="form Shortener"
-            aria-level="1"
             errorVisibility={urlData[0].err.length !== 0}
         >
             <section className="form__input">

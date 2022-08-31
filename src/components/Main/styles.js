@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import short from '../../images/bg-shorten-mobile.svg'
 
-export const StyledMain = styled.main`
+export const StyledMain = styled.section`
   color: white;
   display: block;
   input {

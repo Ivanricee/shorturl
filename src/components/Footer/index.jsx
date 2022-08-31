@@ -21,43 +21,43 @@ export const Footer = () => {
             </section>
             <section className="footer__cards" aria-label="Cards">
                 <section aria-label="card Brand Recognition">
-                    <header>
+                    <section className="footer__cards-header">
                         <img src={recognition} alt="brand recognition" />
-                    </header>
-                    <main>
+                    </section>
+                    <section className="footer__card-main">
                         <h3>Brand Recognition</h3>
                         <p>
                             Boost your brand recognition with each click.
                             Generic links don´t mean a thing. Branded links help
                             instil confidence in your content.
                         </p>
-                    </main>
+                    </section>
                 </section>
                 <section aria-label="Card Detailed Records">
-                    <header>
+                    <section className="footer__cards-header">
                         <img src={record} alt="Detailed Records" />
-                    </header>
-                    <main>
+                    </section>
+                    <section className="footer__card-main">
                         <h3>Detailed Records</h3>
                         <p>
                             Gain insights into who is clicking your links.
                             Knowing when and where people engage with your
                             content helps inform better decisions.
                         </p>
-                    </main>
+                    </section>
                 </section>
                 <section aria-label="Card Fully Customizable">
-                    <header>
+                    <section className="footer__cards-header">
                         <img src={customizable} alt="fully customizable" />
-                    </header>
-                    <main>
+                    </section>
+                    <section className="footer__card-main">
                         <h3>Fully Customizable</h3>
                         <p>
                             Improve brand awareness and content discoverability
                             through customizable links. supercharging audience
                             engagement.
                         </p>
-                    </main>
+                    </section>
                 </section>
             </section>
             <section
@@ -75,42 +75,42 @@ export const Footer = () => {
                 className="footer__links"
                 aria-label="features, resources, company, social"
             >
-                <header className="footer__links-header">
+                <section className="footer__links-header">
                     <h2>shortly</h2>
-                </header>
-                <main>
+                </section>
+                <section className="footer__link_main">
                     <section className="footer__links-section">
-                        <header>
-                            <h4>Features</h4>
-                        </header>
+                        <div>
+                            <h3>Features</h3>
+                        </div>
                         <p>Link Shortening</p>
                         <p>Branded Links</p>
                         <p>Analytics</p>
                     </section>
                     <section className="footer__links-section">
-                        <header>
-                            <h4>Resources</h4>
-                        </header>
+                        <div>
+                            <h3>Resources</h3>
+                        </div>
                         <p>Blog</p>
                         <p>Developers</p>
                         <p>Support</p>
                     </section>
                     <section className="footer__links-section">
-                        <header>
-                            <h4>Company</h4>
-                        </header>
+                        <div>
+                            <h3>Company</h3>
+                        </div>
                         <p>About</p>
                         <p>Our team</p>
                         <p>Careers</p>
                         <p>Contact</p>
                     </section>
-                </main>
-                <footer className="footer__social">
+                </section>
+                <section className="footer__social">
                     <img src={facebook} alt="facebook" />
                     <img src={twitter} alt="twitter" />
                     <img src={pinterest} alt="pinterest" />
                     <img src={instagram} alt="instagram" />
-                </footer>
+                </section>
             </section>
         </StyledFooter>
     )

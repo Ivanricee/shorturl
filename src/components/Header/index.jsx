@@ -25,7 +25,7 @@ export const Header = () => {
     }, [open])
 
     return (
-        <StyledHeader aria-label="Header" aria-level="1" isOpenDialog={open}>
+        <StyledHeader aria-label="Header" isOpenDialog={open}>
             <section className="header__logomenu">
                 <div className="header__logo">
                     <SvgLogo />
@@ -41,7 +41,9 @@ export const Header = () => {
                         <li>
                             <a href="#">Resources</a>
                         </li>
-                        <hr />
+                        <li>
+                            <hr />
+                        </li>
                         <li>Login</li>
                         <li>
                             <ButtonTemplate>
@@ -51,7 +53,11 @@ export const Header = () => {
                     </ul>
                 </nav>
                 <div className="header__menu">
-                    <button type="button" onClick={handleDialog}>
+                    <button
+                        type="button"
+                        aria-label="principal menu"
+                        onClick={handleDialog}
+                    >
                         <BiMenu />
                     </button>
                 </div>
