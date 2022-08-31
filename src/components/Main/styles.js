@@ -57,10 +57,16 @@ export const StyledMain = styled.main`
       font-size: 1rem;
       font-weight: 500;
     }
-    .result__url p {
+  }
+  .result__url {
+    inline-size: 78vw;
+    p {
       color: ${p => p.theme.black};
       margin: 0;
       margin-block-end: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     hr {
       border: 1px solid ${p => p.theme.bg};
@@ -68,7 +74,6 @@ export const StyledMain = styled.main`
     }
     button {
       block-size: 2.8rem;
-      //background-color: ${p => p.theme.purple};
     }
   }
   @media ${p => p.theme.breakPointsDevice.desktop} {
@@ -99,8 +104,10 @@ export const StyledMain = styled.main`
       .result__url {
         flex: 1;
         display: flex;
+        inline-size: 16rem;
         align-items: center;
         p {
+          padding-inline-end: 1rem;
           margin: 0;
           font-size: 0.8rem;
         }
@@ -124,7 +131,7 @@ export const StyledMain = styled.main`
       }
     }
   }
-  @media ${p => p.theme.breakPointsDevice.desktop} {
+  @media ${p => p.theme.breakPointsDevice.desktopL} {
     .form__result {
       .result__url {
         p {

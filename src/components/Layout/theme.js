@@ -7,6 +7,8 @@ export const darkTheme = {
   btnHover: '#2ac4c4',
   btnActive: '#7cdbdb',
   purple: '#3b325d',
+  btnHoverP: '#4d3ab8',
+  btnActiveP: '#987cdb',
   purple2: '#211c28',
   purpleHr: '#4d4179',
   red: '#ff7a7a',
