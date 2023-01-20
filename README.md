@@ -6,7 +6,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Videos](#videos)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -28,11 +28,11 @@ Users should be able to:
   - The `input` field is empty
   - The `input` filed is a url with or without `http(s)://www.`
 
-### Screenshot
+### Videos
 
-![](./screenshots/mobile-ShortUrl.png)
-![](./screenshots/mobile-menu-ShortUrl.png)
-![](./screenshots/Desktop-ShortUrl.png)
+https://user-images.githubusercontent.com/13322969/213588636-9f7ea5b0-5bb8-402a-8174-83ae3f1a52cd.mp4
+
+https://user-images.githubusercontent.com/13322969/213591285-36b6480f-4e81-4bba-ad6e-1fea07466b7b.mp4
 
 
 ### Links
